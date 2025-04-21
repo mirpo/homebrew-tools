@@ -5,20 +5,20 @@
 class Chopdoc < Formula
   desc "A tool to split documents into chunks for RAG and LLM applications"
   homepage "https://github.com/mirpo/chopdoc"
-  version "0.0.9"
+  version "0.0.10"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mirpo/chopdoc/releases/download/v0.0.9/chopdoc_0.0.9_darwin_amd64.tar.gz"
-      sha256 "7c7859084222ffc60b2fac26b05350c4785d1a65f082bf495bd1163a6a9f6793"
+      url "https://github.com/mirpo/chopdoc/releases/download/v0.0.10/chopdoc_0.0.10_darwin_amd64.tar.gz"
+      sha256 "68f3247b8f0e4a8f72fc6065d587278249a13bbf29f0d89f02981728befac4e7"
 
       def install
         bin.install "chopdoc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mirpo/chopdoc/releases/download/v0.0.9/chopdoc_0.0.9_darwin_arm64.tar.gz"
-      sha256 "b9a57aba82a8b3eb72c69d7183caba73affebb41661e69854d5e390c902d303e"
+      url "https://github.com/mirpo/chopdoc/releases/download/v0.0.10/chopdoc_0.0.10_darwin_arm64.tar.gz"
+      sha256 "66f1d9ed03a25909403c348a10cdedde818b0c0a6c79564f0a6a57bc18b55e8a"
 
       def install
         bin.install "chopdoc"
@@ -29,8 +29,8 @@ class Chopdoc < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mirpo/chopdoc/releases/download/v0.0.9/chopdoc_0.0.9_linux_amd64.tar.gz"
-        sha256 "064ed9461eab1b3e7b178cb3069ea5648b70a2f02fda5e1ef934fce0e8ace9f5"
+        url "https://github.com/mirpo/chopdoc/releases/download/v0.0.10/chopdoc_0.0.10_linux_amd64.tar.gz"
+        sha256 "9f24a38f33831a459d48556d13f28946470dafdf438f2a3ae24e269a9eb01781"
 
         def install
           bin.install "chopdoc"
@@ -39,8 +39,8 @@ class Chopdoc < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mirpo/chopdoc/releases/download/v0.0.9/chopdoc_0.0.9_linux_arm64.tar.gz"
-        sha256 "17ed1fe2a7f6386b09c04667bcb2e837e24c50b0e6046d6ca97454624901b56d"
+        url "https://github.com/mirpo/chopdoc/releases/download/v0.0.10/chopdoc_0.0.10_linux_arm64.tar.gz"
+        sha256 "10f88c5f60376d70b9c5cb9d3c18247e99d33d5498a1409ff33a5160e4dc2f45"
 
         def install
           bin.install "chopdoc"
