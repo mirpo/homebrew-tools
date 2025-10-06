@@ -5,20 +5,20 @@
 class Datamatic < Formula
   desc "Generate synthetic datasets using local LLMs via Ollama and LMstudio with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 3, Mistral Small 3.1 and other major language models."
   homepage "https://github.com/mirpo/datamatic"
-  version "0.0.15"
+  version "0.0.16"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mirpo/datamatic/releases/download/v0.0.15/datamatic_0.0.15_darwin_amd64.tar.gz"
-      sha256 "42bd6227bb8ec662594c4e0082942729f02533b88c47b5e3e71c0eb231040bd4"
+      url "https://github.com/mirpo/datamatic/releases/download/v0.0.16/datamatic_0.0.16_darwin_amd64.tar.gz"
+      sha256 "6bf7c9db93bf574df4b8fa9fcd5ca255121eea75500799213daaafb4c17e7bf0"
 
       def install
         bin.install "datamatic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mirpo/datamatic/releases/download/v0.0.15/datamatic_0.0.15_darwin_arm64.tar.gz"
-      sha256 "d36af433a2ff08ca11462831db5c254705525f008bcce8263e09056adc907b9c"
+      url "https://github.com/mirpo/datamatic/releases/download/v0.0.16/datamatic_0.0.16_darwin_arm64.tar.gz"
+      sha256 "22fe54b7c51fc5b2d8647499c48fcc9bfa48df55e2c6c5cf0c36e1de7aeadff7"
 
       def install
         bin.install "datamatic"
@@ -28,15 +28,15 @@ class Datamatic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mirpo/datamatic/releases/download/v0.0.15/datamatic_0.0.15_linux_amd64.tar.gz"
-      sha256 "1b75dc1aafeb724b5b14755eb8730d9932f0e27371b3ac22e8ca352493a30d4b"
+      url "https://github.com/mirpo/datamatic/releases/download/v0.0.16/datamatic_0.0.16_linux_amd64.tar.gz"
+      sha256 "31d572e0646d9d9848f56be53c124b9888e6af491a5b6caf6191c836f67dcfca"
       def install
         bin.install "datamatic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mirpo/datamatic/releases/download/v0.0.15/datamatic_0.0.15_linux_arm64.tar.gz"
-      sha256 "9c8a9d1211a7e050b1ac61c69b3a2cfd1e310b2ec99cafbf8d1cb2f19db9b379"
+      url "https://github.com/mirpo/datamatic/releases/download/v0.0.16/datamatic_0.0.16_linux_arm64.tar.gz"
+      sha256 "fba1bc47c2c789ed9dd0b19dcfe3ec98c0ea74860f9398f72b722e14d749a50c"
       def install
         bin.install "datamatic"
       end
