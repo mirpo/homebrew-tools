@@ -5,20 +5,20 @@
 class Chopdoc < Formula
   desc "A tool to split documents into chunks for RAG and LLM applications"
   homepage "https://github.com/mirpo/chopdoc"
-  version "0.0.11"
+  version "0.0.12"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mirpo/chopdoc/releases/download/v0.0.11/chopdoc_0.0.11_darwin_amd64.tar.gz"
-      sha256 "3f492d3d8442617c772b666e84157ff7e2f72e7e40a3d74ae80d1321ff4c81f3"
+      url "https://github.com/mirpo/chopdoc/releases/download/v0.0.12/chopdoc_0.0.12_darwin_amd64.tar.gz"
+      sha256 "b4975ff433739f595ec308e293b538d19c0c24b88a3ba8821ae37eec459fce85"
 
       def install
         bin.install "chopdoc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mirpo/chopdoc/releases/download/v0.0.11/chopdoc_0.0.11_darwin_arm64.tar.gz"
-      sha256 "902072d3c68c6b75748a12524f5ec76994b2eb48721543ea66cb42de3c715a99"
+      url "https://github.com/mirpo/chopdoc/releases/download/v0.0.12/chopdoc_0.0.12_darwin_arm64.tar.gz"
+      sha256 "8f363b461d7935a748b8479494543aee4cd917609a1fd4cd05bcf04f4413efa4"
 
       def install
         bin.install "chopdoc"
@@ -27,16 +27,16 @@ class Chopdoc < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/mirpo/chopdoc/releases/download/v0.0.11/chopdoc_0.0.11_linux_amd64.tar.gz"
-      sha256 "1f3f67979c2059f47fc6912699f370099790070bd47698668a48a00d9d9350a2"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/mirpo/chopdoc/releases/download/v0.0.12/chopdoc_0.0.12_linux_amd64.tar.gz"
+      sha256 "b073483532ad6d7b90bc3ad2ff1f0ade4d6e68b18952e71a0f077f2de0f2b58c"
       def install
         bin.install "chopdoc"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/mirpo/chopdoc/releases/download/v0.0.11/chopdoc_0.0.11_linux_arm64.tar.gz"
-      sha256 "fc062190d4368fe8e66ebd9724c83fdeca910f0320e561cccf2969d6847b06a2"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/mirpo/chopdoc/releases/download/v0.0.12/chopdoc_0.0.12_linux_arm64.tar.gz"
+      sha256 "7e7eb3c440df505fa2698ed4a301c0b7a8aa9ef903b26de2bcc179cb300a97c7"
       def install
         bin.install "chopdoc"
       end
