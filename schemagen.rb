@@ -5,20 +5,20 @@
 class Schemagen < Formula
   desc "Fast CLI tool that converts JSON Schema into TypeScript interfaces, Python Pydantic v2 models, and Go structs."
   homepage "https://github.com/mirpo/schemagen"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mirpo/schemagen/releases/download/v0.0.3/schemagen_0.0.3_darwin_amd64.tar.gz"
-      sha256 "ba4033aac65f96e26ec78636765e0b64e7552231ddedcc61601d2b5054dc555c"
+      url "https://github.com/mirpo/schemagen/releases/download/v0.0.4/schemagen_0.0.4_darwin_amd64.tar.gz"
+      sha256 "cf6e27138f1133ea201947fb50d47e60b689e284674cb5af3ef8d73f87abd0a5"
 
       def install
         bin.install "schemagen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mirpo/schemagen/releases/download/v0.0.3/schemagen_0.0.3_darwin_arm64.tar.gz"
-      sha256 "c1f074e17624bedc7c466f5ca72a8cc192b61366de95e6f27936ebc9005cad01"
+      url "https://github.com/mirpo/schemagen/releases/download/v0.0.4/schemagen_0.0.4_darwin_arm64.tar.gz"
+      sha256 "24d9852f9600321e3cc8ede77106ee4fb6c9c7a86e1213da2c3a2601558a9340"
 
       def install
         bin.install "schemagen"
@@ -28,15 +28,15 @@ class Schemagen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mirpo/schemagen/releases/download/v0.0.3/schemagen_0.0.3_linux_amd64.tar.gz"
-      sha256 "aff1c71bf78d15a128ec8633bd0f58bc30fe4d291b59b2c75000b55a3e67c69d"
+      url "https://github.com/mirpo/schemagen/releases/download/v0.0.4/schemagen_0.0.4_linux_amd64.tar.gz"
+      sha256 "db5f13b47d34aedb989339fe72e8558fd6835bc36ca71c12abe38cea8d789009"
       def install
         bin.install "schemagen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mirpo/schemagen/releases/download/v0.0.3/schemagen_0.0.3_linux_arm64.tar.gz"
-      sha256 "4d83263f3010991723025bc5725a48029635928cbc1cb146df55e06f3a161916"
+      url "https://github.com/mirpo/schemagen/releases/download/v0.0.4/schemagen_0.0.4_linux_arm64.tar.gz"
+      sha256 "4d655c3ccd28708bc89a686a5306911a070b86a301519cf8bad1337c3c1d1c2e"
       def install
         bin.install "schemagen"
       end
