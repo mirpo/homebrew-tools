@@ -5,20 +5,20 @@
 class Schemagen < Formula
   desc "Fast CLI tool that converts JSON Schema into TypeScript interfaces, Python Pydantic v2 models, and Go structs."
   homepage "https://github.com/mirpo/schemagen"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mirpo/schemagen/releases/download/v0.0.6/schemagen_0.0.6_darwin_amd64.tar.gz"
-      sha256 "d115281e330723284b6f07465ee522c2455d56410a6c3b6b8e0500ab54694be4"
+      url "https://github.com/mirpo/schemagen/releases/download/v0.0.7/schemagen_0.0.7_darwin_amd64.tar.gz"
+      sha256 "4b60e030e33ec0940752e85f35b6d2eb64078e42d0e56856f9f8ec00bc8928da"
 
       define_method(:install) do
         bin.install "schemagen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mirpo/schemagen/releases/download/v0.0.6/schemagen_0.0.6_darwin_arm64.tar.gz"
-      sha256 "c703d438e625de99938ad4978d70e38a917a4df81ad8bf2dc1260361c06b85df"
+      url "https://github.com/mirpo/schemagen/releases/download/v0.0.7/schemagen_0.0.7_darwin_arm64.tar.gz"
+      sha256 "8f05caa9943683ad2e2574e1653512622381c27631d6729b89134008058fbbdf"
 
       define_method(:install) do
         bin.install "schemagen"
@@ -28,15 +28,15 @@ class Schemagen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mirpo/schemagen/releases/download/v0.0.6/schemagen_0.0.6_linux_amd64.tar.gz"
-      sha256 "296d0d7315ad205cb2d494fd8b9f7ad4f0719c856b2fc72986935d89cd175022"
+      url "https://github.com/mirpo/schemagen/releases/download/v0.0.7/schemagen_0.0.7_linux_amd64.tar.gz"
+      sha256 "f6ef103e5b4a275a00968a4cfe3fd4129426d6194c9341052c14b4d8e6f57de9"
       define_method(:install) do
         bin.install "schemagen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mirpo/schemagen/releases/download/v0.0.6/schemagen_0.0.6_linux_arm64.tar.gz"
-      sha256 "48202c9501a1fc20b72b0d810893326ef1c39531dd69787df825859264f6b60e"
+      url "https://github.com/mirpo/schemagen/releases/download/v0.0.7/schemagen_0.0.7_linux_arm64.tar.gz"
+      sha256 "3c68d0d3ab18308221d67601a22f50e096fda4404d4e5ed70e1832b8ae1b510c"
       define_method(:install) do
         bin.install "schemagen"
       end
